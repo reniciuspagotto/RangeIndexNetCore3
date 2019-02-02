@@ -16,7 +16,7 @@ namespace RangeIndicesNetCore3
 
             var text = "Microsoft anuncia C# 8.0";
 
-            string range = text[^24..^0];
+            string range = text[^24..^2];
             Console.WriteLine(range);
 
             string range3 = text[^14..];
