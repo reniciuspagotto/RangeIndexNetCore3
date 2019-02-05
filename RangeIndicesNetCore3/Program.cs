@@ -25,7 +25,18 @@ namespace RangeIndicesNetCore3
             string range4 = text[..9];
             Console.WriteLine(range4);
 
+            var data = GetRange(arrayTest, 0, 4);
+
+            foreach (var item in data)
+                Console.WriteLine(item);
+
             Console.ReadKey();
+        }
+
+        public static Array GetRange(int[] array, Index startIndex, Index endIndex)
+        {
+            var data = array[startIndex..endIndex];
+            return data;
         }
     }
 }
